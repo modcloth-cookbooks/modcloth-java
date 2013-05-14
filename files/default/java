@@ -1,0 +1,6 @@
+#! /usr/bin/bash
+PATH=/opt/local/java/sun6/bin/amd64:${PATH}; export PATH
+JAVA_HOME=/opt/local/java/sun6; export JAVA_HOME
+JVM_HOME=/opt/local/java/sun6; export JVM_HOME
+ulimit -d `/usr/bin/env LC_MESSAGES=C ulimit -H -d`
+/opt/local/java/sun6/bin/amd64/java "$@"
